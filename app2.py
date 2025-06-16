@@ -60,7 +60,7 @@ def response_generator(response):
 index, metadata = load_index()
 
 
-st.title("CHATBOT")
+st.title("KCT_CHATBOT")
 
 if st.session_state.get("messages") is None:
         st.session_state["messages"] = []
