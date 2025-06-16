@@ -41,7 +41,7 @@ def infer_model(history, top_content, top_metadata):
      messages = [
           {
                "role" : "system",
-               "content" : f"You are an assistant that answers user queries regarding the college information. The context is provided here:{top_content}. Also provide the relevant url source to the user from the metadata here: {top_metadata}. Be friendly yet accurate about your answers."
+               "content" : f"You are an assistant that answers user queries regarding the college information.The college name is Kumaraguru College of Technology. Also known as KCT. Every query asked of you will be related to this college. If questions about anything else is asked, answer the user without expending too much time and resource. The context is provided here:{top_content}. Also provide the relevant url source to the user from the metadata here: {top_metadata}. Be friendly yet accurate about your answers."
             }  
      ]
      messages.extend(history)
