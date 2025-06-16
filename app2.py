@@ -11,7 +11,7 @@ import streamlit as st
 import requests
 
 load_dotenv()
-embedder = SentenceTransformer("BAAI/bge-base-en")
+embedder = SentenceTransformer("BAAI/bge-base-en", device = 'cpu') #cpu because streamlit cloud doesnt have cpu in free tier.
 groq = Groq(api_key = os.getenv('GROQ_API'))
 
 git_link = "https://raw.githubusercontent.com/Ghnkrk/chatbot/refs/heads/main/data/kct_enriched_data.json"
